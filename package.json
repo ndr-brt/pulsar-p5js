@@ -3,10 +3,12 @@
   "main": "./lib/atom-p5js",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-p5js:toggle"
+    "atom-workspace": [
+      "atom-p5js:toggle",
+      "atom-p5js:eval"
+    ]
   },
   "repository": "https://github.com/atom/atom-p5js",
   "license": "MIT",
@@ -14,5 +16,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "import-fresh": "^3.2.1",
+    "p5": "^1.0.0"
   }
 }
