@@ -2,7 +2,7 @@
   "name": "atom-p5js",
   "main": "./lib/atom-p5js",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Run p5js in atom",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
@@ -10,7 +10,7 @@
       "atom-p5js:eval"
     ]
   },
-  "repository": "https://github.com/atom/atom-p5js",
+  "repository": "https://github.com/ndr-brt/atom-p5js",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

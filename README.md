@@ -1,8 +1,12 @@
 # atom-p5js package
 
-A short description of your package.
+Run your p5js in atom
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## Howto
+* Write your sketch (look in [examples](./examples) folder for help).
+* Save It.
+* Execute command `Atom P5js: Eval` into your sketch file.
+* Booom!
 
 ## TODO
 * p5js sound
