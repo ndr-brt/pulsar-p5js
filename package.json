@@ -1,7 +1,7 @@
 {
   "name": "atom-p5js",
   "main": "./lib/atom-p5js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Run p5js in atom",
   "keywords": [],
   "activationCommands": {
