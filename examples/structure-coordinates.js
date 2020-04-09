@@ -11,14 +11,14 @@ export default function(p) {
     p.noFill();
 
     p.stroke(255);
-    p.point(p.windowWidth * 0.5, p.windowHeight * 0.5);
-    p.point(p.windowWidth * 0.5, p.windowHeight * 0.25);
+    p.point(p.width * 0.5, p.height * 0.5);
+    p.point(p.width * 0.5, p.height * 0.25);
 
     p.stroke(0, 153, 255);
-    p.line(0, p.windowHeight * 0.33, p.windowWidth, p.windowHeight * 0.33);
+    p.line(0, p.height * 0.33, p.width, p.height * 0.33);
 
     p.stroke(255, 153, 0);
-    p.rect(p.windowWidth * 0.25, p.windowHeight * 0.1, p.windowWidth * 0.5, p.windowHeight * 0.8);
+    p.rect(p.width * 0.25, p.height * 0.1, p.width * 0.5, p.height * 0.8);
   }
 
   p.windowResized = () => {
