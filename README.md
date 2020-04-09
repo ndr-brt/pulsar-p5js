@@ -2,6 +2,8 @@
 
 Run your p5js in atom
 
+![](preview.gif)
+
 ## Howto
 * Write your sketch (look in [examples](./examples) folder for help).
 * Save It.

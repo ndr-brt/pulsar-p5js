@@ -10,7 +10,7 @@ export default function(p) {
 
   p.setup = () => {
     reset();
-    liquid = new Liquid(0, p.windowHeight / 2, p.windowWidth, p.windowHeight / 2, 0.1);
+    liquid = new Liquid(0, p.windowHeight / 3, p.windowWidth, p.windowHeight / 2, 0.1);
   }
 
   p.draw = () => {
