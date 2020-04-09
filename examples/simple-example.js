@@ -1,6 +1,6 @@
 'use babel'
 
-export default class Sketch {
+export default class {
 
   handle(p) {
 
