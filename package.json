@@ -10,7 +10,7 @@
       "atom-p5js:eval"
     ]
   },
-  "repository": "https://github.com/ndr-brt/atom-p5js",
+  "repository": "git@github.com:ndr-brt/atom-p5js.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
