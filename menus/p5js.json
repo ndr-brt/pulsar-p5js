@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-p5js",
-        "command": "atom-p5js:toggle"
+        "label": "Toggle p5.js",
+        "command": "p5js:toggle"
       }
     ]
   },
@@ -12,11 +12,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "atom-p5js",
+          "label": "p5.js",
           "submenu": [
             {
+              "label": "Eval",
+              "command": "p5js:eval"
+            },
+            {
               "label": "Toggle",
-              "command": "atom-p5js:toggle"
+              "command": "p5js:toggle"
             }
           ]
         }

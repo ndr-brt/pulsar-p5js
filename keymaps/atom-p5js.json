@@ -1,6 +1,0 @@
-{
-  "atom-workspace": {
-    "ctrl-alt-w": "atom-p5js:toggle",
-    "ctrl-alt-e": "atom-p5js:eval"
-  }
-}

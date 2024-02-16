@@ -1,16 +1,16 @@
 {
-  "name": "atom-p5js",
-  "main": "./lib/atom-p5js",
+  "name": "p5js",
+  "main": "./lib/p5js",
   "version": "0.1.4",
-  "description": "Run p5js in atom",
+  "description": "Run p5.js sketches in pulsar",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
-      "atom-p5js:toggle",
-      "atom-p5js:eval"
+      "p5js:toggle",
+      "p5js:eval"
     ]
   },
-  "repository": "git@github.com:ndr-brt/atom-p5js.git",
+  "repository": "https://github.com/ndr-brt/pulsar-p5js",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

@@ -1,44 +1,44 @@
 'use babel';
 
-import AtomP5js from '../lib/atom-p5js';
+import P5js from '../lib/p5js';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('AtomP5js', () => {
+describe('P5js', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('atom-p5js');
+    activationPromise = atom.packages.activatePackage('p5js');
   });
 
-  describe('when the atom-p5js:toggle event is triggered', () => {
+  describe('when the p5js:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.atom-p5js')).not.toExist();
+      expect(workspaceElement.querySelector('.p5js')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-p5js:toggle');
+      atom.commands.dispatch(workspaceElement, 'p5js:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.atom-p5js')).toExist();
+        expect(workspaceElement.querySelector('.p5js')).toExist();
 
-        let atomP5jsElement = workspaceElement.querySelector('.atom-p5js');
-        expect(atomP5jsElement).toExist();
+        let p5jsElement = workspaceElement.querySelector('.p5js');
+        expect(p5jsElement).toExist();
 
-        let atomP5jsPanel = atom.workspace.panelForItem(atomP5jsElement);
-        expect(atomP5jsPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'atom-p5js:toggle');
-        expect(atomP5jsPanel.isVisible()).toBe(false);
+        let p5jsPanel = atom.workspace.panelForItem(p5jsElement);
+        expect(p5jsPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'p5js:toggle');
+        expect(p5jsPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('AtomP5js', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.atom-p5js')).not.toExist();
+      expect(workspaceElement.querySelector('.p5js')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-p5js:toggle');
+      atom.commands.dispatch(workspaceElement, 'p5js:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('AtomP5js', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let atomP5jsElement = workspaceElement.querySelector('.atom-p5js');
-        expect(atomP5jsElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'atom-p5js:toggle');
-        expect(atomP5jsElement).not.toBeVisible();
+        let p5jsElement = workspaceElement.querySelector('.p5js');
+        expect(p5jsElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'p5js:toggle');
+        expect(p5jsElement).not.toBeVisible();
       });
     });
   });
