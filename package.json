@@ -10,7 +10,7 @@
       "p5js:eval"
     ]
   },
-  "repository": "https://github.com/ndr-brt/pulsar-p5js",
+  "repository": "git@github.com:ndr-brt/pulsar-p5js",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
